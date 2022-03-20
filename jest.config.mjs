@@ -35,7 +35,7 @@ export default {
     transformIgnorePatterns: [
       ...defaultConfig.transformIgnorePatterns,
       "public"
-    ], 
+    ],
     testMatch: [
       "**/tests/**/server/**/*.test.js"
     ]
@@ -51,11 +51,11 @@ export default {
     transformIgnorePatterns: [
       ...defaultConfig.transformIgnorePatterns,
       "server"
-    ], 
+    ],
     testMatch: [
       "**/tests/**/public/**/*.test.js"
     ]
 
   }
-]
+  ]
 }
