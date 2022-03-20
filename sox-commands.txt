@@ -1,0 +1,40 @@
+sox \
+ --i \
+  "audio/songs/conversation.mp3"
+
+  sox \
+ --i \
+  "audio/fx/Boo! Sound Effect (128 kbps).mp3"
+
+//para tratamento de musica e converter bit rate
+//-v é o volume, no caso 99%
+// -t é o type
+//depois vem o nome
+// -r é a taxa de conversão do bitrate
+
+  sox \
+    -v 0.99 \
+    -t mp3 \
+    "audio/fx/Applause Sound Effect HD (128 kbps).mp3" \
+    -r 48000 \
+    -t mp3 \
+    "output.mp3"
+
+
+//para obter o bitrate
+sox \
+--i \
+-B \
+"audio/fx/Boo! Sound Effect (128 kbps).mp3"
+
+//para concatenar dois audios
+//-m para dar merge nos audios
+sox \
+-t mp3 \
+-v 0.99 \
+-m "audio/songs/conversation.mp3" \
+-t mp3 \
+-v 0.99 \
+"audio/fx/Fart - Gaming Sound Effect (HD) (128 kbps).mp3" \
+-t mp3 \
+"output.mp3"

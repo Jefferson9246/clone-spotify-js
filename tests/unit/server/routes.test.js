@@ -1,4 +1,4 @@
-import { jest, expect, describe, test, beforeEach} from '@jest/globals'
+import { jest, expect, describe, test, beforeEach } from '@jest/globals'
 import config from '../../../server/config.js';
 import { Controller } from '../../../server/controller.js';
 import { handler } from '../../../server/routes.js';
@@ -17,7 +17,7 @@ describe('#Routes - teste site for api response', () => {
         jest.restoreAllMocks();
         jest.clearAllMocks()
     }),
-    test('GET / - sould redirect to home page', async() => {
+    test('GET / - should redirect to home page', async() => {
         const params = TestUtil.defaultHandleParams()
         params.request.method = 'GET'
         params.request.url = '/'
